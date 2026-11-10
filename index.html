@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Página Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Thais Garcia dos Santos</h1>
+        <p>Estudante de Programação Web.</p>
+    </header>
+
+    <!-- NAVEGAÇÃO -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Mim</a>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="apresentacao">
+            <h2>Sobre Mim</h2>
+
+            <p class="texto-apresentacao">
+                Olá! Meu nome é Thais, tenho 24 anos e sou de
+                Poços de Caldas - MG. Atualmente estou no
+                6º período de Licenciatura em Educação Física
+                e agora estou cursando Informática para Internet.
+            </p>
+
+            <img src="img/foto.jpg" alt="Foto de perfil de Thais">
+        </section>
+
+        <!-- HOBBIES -->
+        <section class="hobbies">
+            <h2>Meus Hobbies e Interesses</h2>
+
+            <ul>
+                <li>Assistir a séries e filmes</li>
+                <li>Ouvir música</li>
+                <li>Passar tempo de qualidade com quem eu amo</li>
+            </ul>
+        </section>
+
+        <!-- NOVA SEÇÃO: TECNOLOGIAS E INTERESSES -->
+        <section class="tecnologias">
+            <h2>Tecnologias e Interesses</h2>
+
+            <div class="container-cards">
+
+                <!-- CARTÃO 1 -->
+                <article class="card">
+                    <h3>Programação Web</h3>
+                    <p>
+                        Estou aprendendo a desenvolver páginas
+                        para a internet, utilizando HTML e CSS.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Web</span>
+                    </div>
+                </article>
+
+                <!-- CARTÃO 2 -->
+                <article class="card">
+                    <h3>Banco de Dados</h3>
+                    <p>
+                        Tenho interesse em aprender como os dados
+                        são armazenados, organizados e utilizados.
+                    </p>
+                    <div class="tags">
+                        <span>Dados</span>
+                        <span>Organização</span>
+                        <span>Tecnologia</span>
+                    </div>
+                </article>
+
+                <!-- CARTÃO 3 -->
+                <article class="card">
+                    <h3>Educação</h3>
+                    <p>
+                        Gosto de aprender sobre educação e conhecer
+                        novas maneiras de ensinar e contribuir
+                        com a aprendizagem.
+                    </p>
+                    <div class="tags">
+                        <span>Ensino</span>
+                        <span>Aprendizagem</span>
+                        <span>Educação</span>
+                    </div>
+                </article>
+
+                <!-- CARTÃO 4 -->
+                <article class="card">
+                    <h3>Educação Física</h3>
+                    <p>
+                        Tenho interesse por esportes, atividades
+                        físicas, brincadeiras e qualidade de vida.
+                    </p>
+                    <div class="tags">
+                        <span>Esportes</span>
+                        <span>Movimento</span>
+                        <span>Saúde</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO DE CONTATO -->
+        <section class="formulario">
+            <h2>Entre em Contato</h2>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"
+                       placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Digite seu e-mail">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"
+                          rows="5"
+                          placeholder="Escreva sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>
+            <a href="#" target="_blank">Link para meu Instagram</a>
+        </p>
+        <p>© 2026 - Thais Garcia dos Santos</p>
+    </footer>
+
+</body>
+</html>

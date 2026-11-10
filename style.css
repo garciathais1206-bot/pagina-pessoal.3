@@ -1,0 +1,221 @@
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+
+    /* GRID DA PÁGINA */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "navegacao navegacao"
+        "principal principal"
+        "rodape rodape";
+
+    gap: 15px;
+    padding: 20px;
+}
+
+/* CABEÇALHO */
+header {
+    grid-area: cabecalho;
+    grid-column: 1 / -1;
+
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    grid-area: navegacao;
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #512b81;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2575fc;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    grid-area: principal;
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* SEÇÕES */
+section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #512b81;
+    margin-bottom: 15px;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao img {
+    width: 180px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.texto-apresentacao {
+    line-height: 1.6;
+}
+
+/* HOBBIES */
+.hobbies ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* TECNOLOGIAS E INTERESSES */
+.tecnologias {
+    grid-column: 1 / -1;
+}
+
+/* GRID DOS CARTÕES */
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* CARTÕES */
+.card {
+    background-color: #f5f0fc;
+    border-left: 5px solid #6a11cb;
+    border-radius: 8px;
+    padding: 20px;
+
+    /* FLEXBOX DENTRO DOS CARTÕES */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.card h3 {
+    color: #512b81;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* TAGS DOS CARTÕES */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: #6a11cb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* FORMULÁRIO */
+.formulario {
+    grid-column: 1 / -1;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+/* RODAPÉ */
+footer {
+    grid-area: rodape;
+    grid-column: 1 / -1;
+
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #bda0f5;
+    text-decoration: none;
+}
+
+/* ADAPTAÇÃO PARA CELULAR */
+@media (max-width: 600px) {
+
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
